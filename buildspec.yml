@@ -4,7 +4,7 @@ phases:
   pre_build:
     commands:
       - echo Logging in to Docker Hub...
-      - docker login -u $DOCKERHUB_ID -p $DOCKERHUB_PW
+      - docker login -u $dockerhub_username -p $dockerhub_password
       - TAG_VERSION="python3"
       # Should update this version everytime
       # Should update devops-flask-manifest/deployment.yaml to the same
